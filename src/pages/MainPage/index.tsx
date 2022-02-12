@@ -1,5 +1,5 @@
-import GalleryHero from 'components/GalleryHero';
-import GaleryContent from 'components/Galery';
+import GalleryHero from 'pages/MainPage/components/GalleryHero';
+import GaleryContent from 'pages/MainPage/components/GaleryContent';
 import GalleryStateProvider from 'providers/GalleryStateProvider';
 
 function MainPage(): JSX.Element {
