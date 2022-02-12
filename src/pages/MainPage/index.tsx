@@ -1,12 +1,13 @@
-import Hero from 'components/Hero';
-import Galery from 'components/Galery';
+import GalleryHero from 'components/GalleryHero';
+import GaleryContent from 'components/Galery';
+import GalleryStateProvider from 'providers/GalleryStateProvider';
 
 function MainPage(): JSX.Element {
   return (
-    <>
-      <Hero/>
-      <Galery/>
-    </>
+    <GalleryStateProvider>
+      <GalleryHero/>
+      <GaleryContent/>
+    </GalleryStateProvider>
   );
 }
 
