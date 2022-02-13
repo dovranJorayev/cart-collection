@@ -1,12 +1,12 @@
 import React from 'react';
-import { 
-  EMPTY_GALLERY_STATE, 
-  galleryReducer, 
-  GalleryStateContext 
+import {
+  INITIAL_GALLERY_STATE,
+  galleryReducer,
+  GalleryStateContext
 } from 'state/GalleryState';
 
 function GalleryStateProvider({ children }: React.PropsWithChildren<{}>): JSX.Element {
-  const [state, dispatcher] = React.useReducer(galleryReducer, EMPTY_GALLERY_STATE);
+  const [state, dispatcher] = React.useReducer(galleryReducer, INITIAL_GALLERY_STATE);
 
   const value = {
     state,
