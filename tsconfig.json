@@ -21,6 +21,7 @@
     "jsx": "react-jsx",
     "baseUrl": "src",
     "typeRoots": [
+      "node_modules/@mui/types",
       "node_modules/@types",
       "src/types"
     ]
